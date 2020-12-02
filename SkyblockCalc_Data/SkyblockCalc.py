@@ -14,27 +14,27 @@ while x == x:
 	  print("If you want to exit out of the session, input exit as your command!\n")
 	  global data_1
 	  data_1 = str(input("What are you trying to calculate?\n\nCommand: "))
-	  replit.clear()
+
   def ehp():
 	  print("\nPlease put your responses in numbers like 1000 instead of 1k!\n")
 	  hp = int(input("What is your HP?\nHP: "))
-	  replit.clear()
+
 	  defense = int(input("\nWhat is your Defense?\nDefense: "))
-	  replit.clear()
+
 	  true_def = int(input("\nWhat is your True Defense?\nTrue Defense: "))
-	  replit.clear()
+
 	  ehp = (hp * (defense/100))+ true_def
 	  print("\nYour effective HP is:", ehp, "\n")
   def damage():
 	  crit_Damage = int(input("\nHow much Crit Damage do you have? Please put them in numbers like 333 instead of 333%!\nCritical Damage: "))
-	  replit.clear()
+
 	  crit_Damage = crit_Damage/100
 	  strength = int(input("\nHow much Strength do you have? Please put them in numbers like 1000 instead of 1k!\nStrength: "))
-	  replit.clear()
+
 	  weapon_Damage = int(input("\nWhat is your weapon base damage?\nDamage: "))
-	  replit.clear()
+
 	  combat_Level = int(input("\nWhat is your combat level?\nCombat Level: "))
-	  replit.clear()
+
 	  base_Damage = (5+weapon_Damage + (strength/5))*(1+(strength/100))
 	  print("\nThe next question will ask you which mob are you trying to kill. Here are the list/choices!")
 	  print("")
@@ -43,7 +43,7 @@ while x == x:
 	  print("Spider (for Cave Spiders, Spiders and Silverfish)")
 	  print("Cube (for Creepers, Magma Cubes, and Slimes)")
 	  mob_Type = str(input("\nWhat mob type are you trying to kill?\nMob Type: "))
-	  replit.clear()
+
 	  print("The following questions will involve in the enchants that your sword has. If your sword does not have the specified enchant, please put 0 as your input!")
 	  ender_Slayer = 0
 	  sharpness = 0
@@ -53,46 +53,46 @@ while x == x:
 	  dragon_Hunter = 0
 	  cubism = 0
 	  sharpness = int(input("\nWhat level enchant is your Sharpness?\nEnchant Level: "))
-	  replit.clear()
+
 	  if mob_Type == "End" or mob_Type == "end":
 		  ender_Slayer = int(input("\nWhat level enchant is your Ender Slayer?\nEnchant Level: "))
-		  replit.clear()
-		  dragons = str(input("\nAre you fighting the EnderDragon? yes or no?\nCommand: "))
-		  replit.clear()
-		  if dragons == "yes":
+	
+  		  dragons = str(input("\nAre you fighting the EnderDragon? yes or no?\nCommand: "))
+	
+  		  if dragons == "yes":
 			  dragon_Hunter = int(input("\nWhat level enchant is your Dragon Slayer?\nEnchant Level: "))
-			  replit.clear()
-		  if dragons == "no":
+		
+    		  if dragons == "no":
 			  dragon_Hunter == 0
 	  if mob_Type == "Undead" or mob_Type == "undead" and sharpness == 0:
 		  smite = int(input("\nWhat level enchant is your smite?\nEnchant Level: "))
-		  replit.clear()
-	  if mob_Type == "Spider" or mob_Type == "spider" and sharpness == 0:
+	
+  	  if mob_Type == "Spider" or mob_Type == "spider" and sharpness == 0:
 		  arthropods = int(input("\nWhat level enchant is your Bane of Arthropods?\nEnchant Level: "))
-		  replit.clear()
-	  if mob_Type == "Cube" or mob_Type == "cube":
+	
+  	  if mob_Type == "Cube" or mob_Type == "cube":
 		  cubism = int(input("\nWhat level enchant is your Cubism?\n"))
-		  replit.clear()
-	  #Giant Killer Enchant
+	
+  	  #Giant Killer Enchant
 	  hp = int(input("\nWhat is your HP?\nHP: "))
-	  replit.clear()
+
 	  giant_Killer = int(input("\nWhat level enchant is your Giant Killer?\nEnchant Level: "))
-	  replit.clear()
+
 	  if giant_Killer != 0:
 		  enemy_HP = int(input("\nHow much HP does your enemy have?\nEnemy HP: "))
-		  replit.clear()
-	  giant_Damage = ((enemy_HP - hp)/hp)* 0.1 * giant_Killer * 1
+	
+  	  giant_Damage = ((enemy_HP - hp)/hp)* 0.1 * giant_Killer * 1
 	  if giant_Damage > 0.25:
 		  giant_Damage = 0.25
 	  elif giant_Killer == 0:
 		  giant_Damage = 0
       #Execute Enchant
 	  execute = int(input("\nWhat is your execute enchant level\nEnchant Level: "))
-	  replit.clear()
+
 	  if execute != 0:
 		  current_HP = str(input("\nWhat is your current HP? (Input <same> if its the same HP)\nCurrent HP: "))
-		  replit.clear()
-		  if current_HP == "same" or current_HP == "Same":
+	
+  		  if current_HP == "same" or current_HP == "Same":
 			  current_HP = hp
 		  if current_HP != "same" or current_HP != "Same":
 			  current_HP = int(current_HP)
@@ -101,24 +101,24 @@ while x == x:
 	  execute_Damage = ((hp - current_HP)/hp)*0.002* execute * 1
 	  #First Strike Enchant
 	  first_Strike = int(input("\nWhat is your First Strike enchant level?\nEnchant Level: "))
-	  replit.clear()
+
 	  #Impaling Enchant
 	  impaling = int(input("\nWhat is your Impaling enchant level?\nEnchant Level: "))
-	  replit.clear()
+
 	  #Armor Damage Multiplier
 	  data_1 = str(input("\nAre you wearing a tux? yes/no\nCommand: "))
-	  replit.clear()
+
 	  if data_1 != "yes" and data_1 != "no":
 		  print("You have entered the wrong input!")
-		  replit.clear()
-		  data_1 = str(input("\nAre you wearing a tux? yes/no\nCommand: "))
-		  replit.clear()
-	  if data_1 == "yes":
+	
+  		  data_1 = str(input("\nAre you wearing a tux? yes/no\nCommand: "))
+	
+  	  if data_1 == "yes":
 		  print("\nWhich type of tux are you wearing:")
 		  print("")
 		  data_2 = str(input("Cheap, Fancy, or Elegant?\nTux: "))
-		  replit.clear()
-		  if data_2 == "Cheap" or data_2 == "cheap":
+	
+  		  if data_2 == "Cheap" or data_2 == "cheap":
 			  damage_Armor = 1.5
 			  hp = 75
 		  if data_2 == "Fancy" or data_2 == "fancy":
@@ -129,10 +129,10 @@ while x == x:
 			  hp = 250
 		  else:
 			  print("You have entered the wrong input!")
-			  replit.clear()
-			  data_2 = str(input("\nCheap, Fancy, or Elegant?\nTux: "))
-			  replit.clear()
-	  if data_1 == "no":
+		
+    			  data_2 = str(input("\nCheap, Fancy, or Elegant?\nTux: "))
+		
+    	  if data_1 == "no":
 		  damage_Armor = 1
 	  damage_Multiply = 1 + (combat_Level * 0.04)+((sharpness * 0.05)+(smite * 0.08)+(ender_Slayer * 0.12)+(dragon_Hunter * 0.08)+(arthropods * 0.08)+(cubism * 0.1)+(first_Strike * 0.25)+(impaling * 0.125)+execute_Damage+giant_Damage)
 	  final_Damage = base_Damage * damage_Multiply * damage_Armor * (1+crit_Damage)
@@ -141,11 +141,11 @@ while x == x:
 	  print("Here is the list that you can choose from!\n")
 	  print("Yeti for Yeti Sword\n Frozen for Frozen Scythe\n Golem for Golem Sword\n Ink for Ink wand\n Leap for Leaping Sword\n Silk for Silk Edge Sword\n Pig for Pigman Sword\n Aotd for Aspect of the Dragons\n Voodoo for Voodoo Doll\n Dread for Dreadlord Sword\n Bonzo for Bonzo's Staff\n Spirit for Spirit Sceptre\n Giant for Giant's Sword\n Midas for Midass Staff\n")
 	  magic_Weapon = str(input("\nWhich weapon are you using?\nWeapon: "))
-	  replit.clear()
+
 	  mana = int(input("How much mana do you have?\nMana: "))
-	  replit.clear()
+
 	  base_Ability = float(input("What is the base damage that is displayed in the weapon lore?\nBase Damage: "))
-	  replit.clear()
+
 	  if magic_Weapon == "Yeti" or magic_Weapon == "yeti":
 		  ability_Scale = 0.3
 	  if magic_Weapon == "Frozen" or magic_Weapon == "frozen":
@@ -187,16 +187,16 @@ while x == x:
 	  all_farm_Price = 0
 	  price = 0
 	  time_Format = str(input("\nDo you want to calculate profit in hours or days?\nCommand: "))
-	  replit.clear()
+
 	  if time_Format == "Days" or time_Format == "days":
 		  time_Days = int(input("\nHow much days?\nCommand: "))
-		  replit.clear()
-		  time_Hours = time_Days * 24
+	
+  		  time_Hours = time_Days * 24
 		  time_Minutes = time_Hours * 60
 	  if time_Format == "Hours" or time_Format == "hours" or time_Format == "Hour" or time_Format == "hour":
 		  time_Hours = int(input("\nHow much hours?\nCommand: ")) 
-		  replit.clear()
-		  time_Minutes = time_Hours * 60
+	
+  		  time_Minutes = time_Hours * 60
 	  time_Seconds = time_Minutes * 60
 	  farming_list_15 = [15,15,13,13,11,11,10,10,9,9,8]
 	  farming_list_20 = [20,20,18,18,16,16,14,14,12,12,10]
@@ -231,11 +231,11 @@ while x == x:
 	  other_list_13 = [13,13,12,12,11,11,9.5,9.5,8,8,6.5]
 	  other_list_30 = [30,29,28,27,26,25,24,23,22,20,18]
 	  category = str(input("\nWhat type of minion are you calculating?\nCombat, Farming, Fishing, Foraging, or Mining?\n(Snow minions and Flower minions are in the other categories so input (other) for these minions!)\nMinion Category: "))
-	  replit.clear()
+
 	  minion = str(input("\nPlease list the minion that you would like to calculate the production!\n (Example: Magma instead of Magma Cube minion or Nether instead of Nether Wart Minion or Ender instead of Enderman)\nMinion Name: "))
-	  replit.clear()
+
 	  tier_info = int(input("\nWhat tier is your minion? (Example: 11 instead of XI)\nMinion Tier: "))
-	  replit.clear()
+
 	  minion_Tier = tier_info - 1
 	  minion_Action = 0
 	  drop = 0
@@ -330,8 +330,8 @@ while x == x:
 				  minion_Time = time_Seconds/minion_FA
 				  round_minion_time = int(minion_Time)
 				  iron_Price = float(bz_Data["products"]["IRON_INGOT"]["sell_summary"][0]["pricePerUnit"])
-				  replit.clear()
-				  drop = 3
+			
+      				  drop = 3
 				  eye_Drop = 1
 				  iron_Drop = 0
 				  for n in range(round_minion_time):
@@ -572,26 +572,26 @@ while x == x:
 	  print("\nWelcome to the Skyblocks Calculator, a project developed by Sub01!\n\nFeel free to check out my forums page as well!\nhttps://hypixel.net/members/thelapissub01.3848075/")
 	  greeting()
 	  if data_1 == "ehp" or data_1 == "Ehp":
-		  replit.clear()
-		  print("\nWelcome to the EHP Calculator!\n")
+	
+  		  print("\nWelcome to the EHP Calculator!\n")
 		  ehp()
 	  if data_1 == "dmg" or data_1 == "Dmg":
-		  replit.clear()
-		  print("\n Welcome to the Damage Calculator!\n")
+	
+  		  print("\n Welcome to the Damage Calculator!\n")
 		  damage()
 	  if data_1 == "ability" or data_1 == "Ability":
-		  replit.clear()
-		  print("\nWelcome to the Ability Damage Calculator!\n")
+	
+  		  print("\nWelcome to the Ability Damage Calculator!\n")
 		  ability()
 	  if data_1 == "minion" or data_1 == "minions" or data_1 == "Minion" or data_1 == "Minion":
-		  replit.clear()
-		  print("\nWelcome to the Minion Profit Calculator!\n")
+	
+  		  print("\nWelcome to the Minion Profit Calculator!\n")
 		  minion()
 	  if data_1 == "exit" or data_1 == "Exit":
 		  sys.exit()
   if x > 1:
 	  data_2 = str(input("\nWould you like to continue with the calculator? Yes or No\nCommand: "))
-	  replit.clear()
+
 	  if data_2 == "Yes" or data_2 == "yes" or data_2 == "y" or data_2 == "Y":
 		  greeting()
 		  if data_1 == "ehp" or data_1 == "Ehp":
