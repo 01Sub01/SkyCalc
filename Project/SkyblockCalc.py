@@ -520,6 +520,10 @@ while x == x:
 			  minion_Action = other_list_30[minion_Tier]
 			  drop = 1
 			  price = 1
+          data3 = str(input("Do you have Diamond Spreading?\n"))
+	  if data3 == "Yes" or data3 == "yes":
+		  drop2 = drop/10
+		  price2 = float(bz_Data["products"]["DIAMOND"]["sell_summary"][0]["pricePerUnit"])
 	  minion_FA = minion_Action * 2
 	  minion_Time2 = time_Seconds / minion_FA
 	  all_Price = all_fish_Price + all_spiderPrice + all_slayer_Price + all_farm_Price + ((minion_Time2 * drop)* price) + ((minion_Time2 * drop2)* price2) + ((minion_Time2 * additional_Drop)* additional_Price)
