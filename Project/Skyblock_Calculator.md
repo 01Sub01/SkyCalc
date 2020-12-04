@@ -1,5 +1,5 @@
 ***
-#### Welcome to the Skyblocks Calculator by Sub01!
+#### Welcome to the SkyCalc by Sub01!
 ***
 ### What does this calculator offer?
 
