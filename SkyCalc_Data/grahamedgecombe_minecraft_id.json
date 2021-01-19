@@ -4314,9 +4314,9 @@
 "text_type": "record_wait"
 },
 {
-  "type": Null,
-  "meta": Null,
-  "name": "Bait",
-  "text_type": "bait"
+"type": Null,
+"meta": Null,
+"name": "Bait",
+"text_type": "bait"
 }
 ]
