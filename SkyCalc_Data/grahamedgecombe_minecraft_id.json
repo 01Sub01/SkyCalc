@@ -4312,5 +4312,11 @@
 "meta": 0,
 "name": "Wait Disc",
 "text_type": "record_wait"
+},
+{
+  "type": Null,
+  "meta": Null,
+  "name": "Bait",
+  "text_type": "bait"
 }
 ]
